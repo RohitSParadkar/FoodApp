@@ -1,0 +1,77 @@
+lecture 1
+
+
+
+
+
+
+
+package-lock.json vs package.json
+
+package-lock.json - exact version 
+carret and 
+node_modules: database for our project 
+
+node_modules should not be push in github
+
+parcel:
+1) minification of (files,image)
+2) cache while development 
+3) https  npx parcel index.html --https
+4) port number
+5) we should put parcel-cache in gitignor 
+6) consistance hashing algoritham
+7) tree shaking (remove unwanted nodes)
+ 
+
+
+
+Transitive dependcies
+1) dependacy tree
+
+npx: Execute using npm 
+npx parcel index.html
+react and react-dom (lec2)
+
+never touch node_modules or package.json
+
+pollyfill: programe is converted to older code(babel) 
+
+
+
+
+
+
+browserlist:[]
+1) add below dependancies in package.json 
+
+
+browser does not know modules so we have to speficifacally tell that it is module will importing
+
+
+different script type:
+
+
+HMR - hot module replacement for (live server)
+file watcher - file watcher algoritham
+
+script in package.json
+
+22/7/2023
+1) npx = npm run 
+
+2) console.log is not automatically removed in optimization we need to remove that so use 
+(babel-plugin-transform-remove-console)
+
+3)keys: unique identifier of children in dom (rerendering )
+4) jsx : It is a html like 
+
+jsx=>React.createElement=>object=>html(dom) (babel convert jsx to React.createElement)
+how does jsx works?
+
+semantic tags:
+header ,footer ,article,aside ,section,nav
+
+5)functional component: function with some jsx 
+  name of component start with capital letter
+  

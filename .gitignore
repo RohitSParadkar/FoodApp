@@ -1,0 +1,12 @@
+# Ignore build output files
+build/
+dist/
+.parcel-cache/
+
+# Ignore node_modules folder
+node_modules/
+
+
+# Ignore sensitive configuration files
+config.ini
+secrets.txt
