@@ -75,3 +75,49 @@ header ,footer ,article,aside ,section,nav
 5)functional component: function with some jsx 
   name of component start with capital letter
   
+23/7/2023 lec(4)
+1)return react elements like root.render(element) *
+2)return React Componet like root.render(<Componet/>)*
+3)use react element inside react component like {element}
+4)if a element is functional component then {<element/>}
+5){any code of javascript code}
+6)jsx is sanitization
+7) component composition (component inside component)
+
+24/7/2023 (lec5)
+1)opetional chaining
+
+const ResturantCard = ({element}/props) => {   //destructuring of object
+    console.log(props);
+    return (
+        <div className="resturantCard">
+            <img alt="Restaurant Card" id="cardimg" src={props.resturant?.img} />
+            <h2>{props.resturant?.name}</h2>
+            <h3>{props.resturant?.cuisine.join(",")}</h3>
+            <h4>{props.resturant?.rating} star</h4>
+        </div>
+    )
+
+}
+
+26/7/2023
+ {resturantList.map((resturant, index) => (
+        <ResturantCard key={index} resturant={resturant} />
+
+ <div className="cardContainer">
+      <ResturantCard resturant={resturantList[0]} />
+      <ResturantCard resturant={resturantList[1]} />
+      <ResturantCard resturant={resturantList[2]} />
+      <ResturantCard resturant={resturantList[3]} />
+      <ResturantCard resturant={resturantList[4]} />
+    </div>
+
+    *spread operator in javascript
+    *virtual dom  - resconsiliation
+    why react is fast 
+    1) virtual dom 
+    2)resconsillation(process which uses diff algoritham which only render new node)
+    
+   why is keys is use?
+
+  # react fiber 
