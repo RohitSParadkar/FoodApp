@@ -26,6 +26,7 @@
   border: 1px solid black;
   margin: 10px;
   padding: 10px;
+  word-wrap: break-word; 
   
 }
 #cardimg{
@@ -38,6 +39,6 @@
   grid-template-columns: 200px 200px 200px 200px;
   border: 1px solid black;
   margin: 10px;
-  justify-content: space-evenly
+  justify-content: space-evenly;
   
 }

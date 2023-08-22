@@ -121,3 +121,35 @@ const ResturantCard = ({element}/props) => {   //destructuring of object
    why is keys is use?
 
   # react fiber 
+27/7/2023(lec6)
+1) Why to use word default in exporting ?
+2) can export default one time 
+3) name import  
+4) default import
+
+5) * input tag while not work in react
+6) (e)=>console.log(e.target.value)
+
+7)one way data binding
+8)what is state ?
+9) what is hooks?:  normal function for specific work
+10)local variable in js vs react 
+11) js : let var = 34;
+12) react: const[name]=useState()
+13) oneway data binding
+14) useState return array[variable , setFunction]
+
+(lec7) - chit chat 
+
+(lec8):
+1) react only track state variable 
+microservice architecture : (different services run on different ports)
+1)Monolith architecture
+
+API call :
+two ways: 1) load page=>api=>read page  2)load=>intial page=>api call=>update page
+useEffect: 1) call 
+cors error : 
+homework: see how to find error in useEffect
+shimmer effect:
+conditional rerendering
