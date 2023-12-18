@@ -138,7 +138,7 @@ const ResturantCard = ({element}/props) => {   //destructuring of object
 (lec7) - chit chat 
 
 (lec8):
-1) react only track state variable 
+1) react only track state variable  - each time it changes it redner whole component
 2 ) When the state change the react redender the whole component
 microservice architecture : (different services run on different ports)
 1)Monolith architecture
