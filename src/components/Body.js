@@ -23,17 +23,22 @@ const Body = () => {
   }, []);
 
   async function getResturant() {
-    const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
-    );
-    const jsonData = await data.json();
-    console.log(
-      jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
-    );
-    setResturant(
-      jsonData.data.cards[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
+    try{
+      const data = await fetch(
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
+      );
+      const jsonData = await data.json();
+      console.log(
+        jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
+      );
+      setResturant(
+        jsonData.data.cards[2]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+      );
+    }catch(error){
+      console.error("Error fetching data:", error);
+    }
+   
   }
   console.log("render");
   return (

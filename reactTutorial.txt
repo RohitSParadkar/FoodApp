@@ -38,10 +38,6 @@ never touch node_modules or package.json
 pollyfill: programe is converted to older code(babel) 
 
 
-
-
-
-
 browserlist:[]
 1) add below dependancies in package.json 
 
@@ -143,6 +139,7 @@ const ResturantCard = ({element}/props) => {   //destructuring of object
 
 (lec8):
 1) react only track state variable 
+2 ) When the state change the react redender the whole component
 microservice architecture : (different services run on different ports)
 1)Monolith architecture
 
